@@ -14,7 +14,7 @@ const Welcome = () => {
     <div>
     
     <AbsoluteCenter className="welcomeBody">
-    <Center padding={{base: 2, md: 4}}>{params.name === "FoodPanda" ? <SiFoodpanda color="#B0883C" size="40"/> : params === "FastFood" ? <MdFastfood color="white" size="40" /> : null}</Center>
+    <Center padding={{base: 2, md: 4}}>{params.name === "FoodPanda" ? <SiFoodpanda color="#B0883C" size="40"/> : params.name === "FastFood" ? <MdFastfood color="white" size="40" /> : null}</Center>
       <Stack spacing={{ base: '6', md: '8' }}>
       <Center><Text color="primaryText">{params.name}</Text></Center>
         <Stack spacing={{ base: '4', md: '5' }} align="center">
