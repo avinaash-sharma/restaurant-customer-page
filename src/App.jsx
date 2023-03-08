@@ -9,7 +9,7 @@ function App() {
       <Container maxW="container.sm">
         <div bg={useColorModeValue("gray.50", "gray.800")}>
           <Routes>
-            <Route path="/:name" element={<Welcome />} />
+            <Route path="welcome/:name" element={<Welcome />} />
             {/* <Route path="/uub-dashboard" element={<Dashboard />}>
         <Route path="use-case" element={<UseCase />} />
         <Route path="domain" element={<Domain />} />
