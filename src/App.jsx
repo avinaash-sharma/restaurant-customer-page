@@ -1,11 +1,13 @@
 import { Container, useColorModeValue } from "@chakra-ui/react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/commonComponents/Navbar.jsx";
 import Welcome from "./components/screens/client/Welcome";
 
 function App() {
   return (
     <div className="App">
+    <Navbar />
       <Container maxW="container.sm">
         <div bg={useColorModeValue("gray.50", "gray.800")}>
           <Routes>

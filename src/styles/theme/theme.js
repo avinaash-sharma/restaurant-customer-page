@@ -62,7 +62,7 @@ import {
   
               _hover: {
                 backgroundColor: mode("brand.900")(props),
-                transform: 'scale(1.3)'
+                transform: 'scale(1.12)'
               },
   
               _active: {
