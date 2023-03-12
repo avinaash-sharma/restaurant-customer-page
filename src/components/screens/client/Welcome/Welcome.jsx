@@ -12,11 +12,15 @@ import { SiFoodpanda } from "react-icons/si";
 import { MdFastfood } from "react-icons/md";
 import { useParams } from "react-router";
 import SocialLinks from "../../../commonComponents/socialLink/index.jsx";
+import { Link, useNavigate  } from "react-router-dom";
+
 
 const Welcome = () => {
   const params = useParams();
+  const navigate = useNavigate();
   const buttonSize = useBreakpointValue(["sm", "md"]);
   console.log("🚀 ~ file: Welcome.jsx:10 ~ Welcome ~ params:", params);
+  const linkCreationMenu = `/menu/${params.name}`
 
   return (
     <div>
@@ -51,10 +55,13 @@ const Welcome = () => {
             direction={{ base: "column", sm: "row" }}
             justify="center"
           >
-            <Button variant="primary" size={buttonSize} w={[300, 200, 60]}>
+          <Link >
+            <Button onClick={() => {}} variant="primary" size={buttonSize} w={[300, 200, 60]}>
               About Us
             </Button>
-            <Button variant="primary" size={buttonSize} w={[300, 200, 60]}>
+            </Link>
+            <Link to={linkCreationMenu}></Link>
+            <Button variant="primary" onClick={() => navigate(linkCreationMenu)} size={buttonSize} w={[300, 200, 60]}>
               Menu
             </Button>
           </Stack>

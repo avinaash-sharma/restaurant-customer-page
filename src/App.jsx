@@ -3,6 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/commonComponents/Navbar.jsx";
 import Welcome from "./components/screens/client/Welcome";
+import Menu from "./components/screens/client/Menu";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div bg={useColorModeValue("gray.50", "gray.800")}>
           <Routes>
             <Route path="welcome/:name" element={<Welcome />} />
+            <Route path="menu/:name" element={<Menu />} />
             {/* <Route path="/uub-dashboard" element={<Dashboard />}>
         <Route path="use-case" element={<UseCase />} />
         <Route path="domain" element={<Domain />} />
