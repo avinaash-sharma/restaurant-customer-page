@@ -1,0 +1,26 @@
+.menuContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+
+div.menuContainer {
+  overflow: auto;
+}
+
+div.menuContainer button {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px;
+}
+
+
+.foodCardContainer{
+  margin-top: 10px;
+}
