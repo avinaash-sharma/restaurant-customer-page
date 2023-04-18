@@ -19,7 +19,7 @@ import {
   Container,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import {FiSettings} from "react-icons/fi"
+import {FiSettings, FiShoppingCart} from "react-icons/fi"
 
 const Links = ['Dashboard', 'Projects', 'Team'];
 
@@ -64,6 +64,7 @@ export default function Simple() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
+          <HStack spacing={3}>
             <Menu>
               <MenuButton
                 as={Button}
@@ -71,7 +72,8 @@ export default function Simple() {
                 variant={'link'}
                 cursor={'pointer'}
                 minW={0}>
-                <FiSettings color="#B0883C" size={'20'} />
+                <FiSettings mx={'3'} color="#B0883C" size={'20'} />
+                
               </MenuButton>
               <MenuList>
                 <MenuItem>Link 1</MenuItem>
@@ -80,7 +82,10 @@ export default function Simple() {
                 <MenuItem>Link 3</MenuItem>
               </MenuList>
             </Menu>
+            <FiShoppingCart color="#B0883C" size={'20'} />
+            </HStack>
           </Flex>
+          
         </Flex>
 
         {isOpen ? (

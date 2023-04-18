@@ -13,6 +13,9 @@ import {
   HStack,
 } from "@chakra-ui/react";
 
+import Counter from "../Counter";
+import "../../../styles/components/Card.css";
+
 import React from "react";
 
 const index = ({ data }) => {
@@ -40,26 +43,33 @@ const index = ({ data }) => {
 
           <Text py="2">{item.description}</Text>
           <HStack spacing={2}>
-          {item.characteristics.map((character) => {
-            return (
-              
-              <Tag
-                size={"md"}
-                key={item.id + character}
-                variant="subtle"
-                colorScheme="cyan"
-              >
-                <TagLabel>{character}</TagLabel>
-              </Tag>
-            );
-          })}
+            {item.characteristics.map((character) => {
+              return (
+                <Tag
+                  size={"md"}
+                  key={item.id + character}
+                  variant="subtle"
+                  colorScheme="cyan"
+                >
+                  <TagLabel>{character}</TagLabel>
+                </Tag>
+              );
+            })}
           </HStack>
         </CardBody>
 
         <CardFooter>
-          <Button variant="primary" colorScheme="blue">
+          <div className="cardFooter">
+            
+            <Counter />
+
+            <Text as='b' pt={"5"} color="white" fontSize="2xl">
+              ₹ {item.price}
+            </Text>
+          </div>
+          {/*<Button variant="primary" colorScheme="blue">
             Add to Tray
-          </Button>
+        </Button>*/}
         </CardFooter>
       </Stack>
     </Card>

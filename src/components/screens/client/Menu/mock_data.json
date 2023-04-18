@@ -61,7 +61,7 @@
     "price": 550,
     "description": "Assorted sushi rolls including California Roll, Dragon Roll, and Spicy Tuna Roll",
     "rating": 4.8,
-    "image": "https://images.pexels.com/photos/3075592/pexels-photo-3075592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "image": "https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "characteristics": ["seafood", "gluten-free"],
     "availability": "Available",
     "category": "Japanese"
@@ -116,7 +116,7 @@
     "price": 350,
     "description": "Espresso mixed with caramel syrup, milk, and ice, topped with whipped cream",
     "rating": 4.7,
-    "image": "https://images.pexels.com/photos/2743126/pexels-photo-2743126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "image": "https://images.pexels.com/photos/14849850/pexels-photo-14849850.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "characteristics": ["beverage", "iced"],
     "availability": "Available",
     "category": "Drinks"
@@ -127,7 +127,7 @@
     "price": 200,
     "description": "Refreshing lemonade with fresh strawberries, mint, and ice",
     "rating": 4.5,
-    "image": "https://images.pexels.com/photos/3157070/pexels-photo-3157070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "image": "https://images.pexels.com/photos/8605802/pexels-photo-8605802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "characteristics": ["beverage", "non-alcoholic", "fruit-flavored"],
     "availability": "Available",
     "category": "Drinks"
@@ -138,7 +138,7 @@
     "price": 450,
     "description": "Traditional margarita cocktail made with tequila, triple sec, lime juice, and salt rim",
     "rating": 4.8,
-    "image": "https://images.pexels.com/photos/569312/pexels-photo-569312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "image": "https://images.pexels.com/photos/2480828/pexels-photo-2480828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "characteristics": ["beverage", "alcoholic", "cocktail"],
     "availability": "Available",
     "category": "Drinks"
@@ -149,7 +149,7 @@
     "price": 250,
     "description": "Rich and creamy hot chocolate made with cocoa powder, milk, and whipped cream",
     "rating": 4.4,
-    "image": "https://images.pexels.com/photos/1431332/pexels-photo-1431332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "image": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "characteristics": ["beverage", "hot", "chocolate"],
     "availability": "Available",
     "category": "Drinks"
@@ -160,7 +160,7 @@
     "price": 180,
     "description": "Freshly squeezed orange juice made from ripe oranges",
     "rating": 4.6,
-    "image": "https://images.pexels.com/photos/3094002/pexels-photo-3094002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "image": "https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "characteristics": ["beverage", "non-alcoholic", "fruit juice"],
     "availability": "Available",
     "category": "Drinks"
