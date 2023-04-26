@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/commonComponents/Navbar.jsx";
 import Welcome from "./components/screens/client/Welcome";
 import Menu from "./components/screens/client/Menu";
+import Cart from "./components/screens/client/Cart";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Routes>
             <Route path="welcome/:name" element={<Welcome />} />
             <Route path="menu/:name" element={<Menu />} />
+            <Route path="cart/:name" element={<Cart />} />
+
             {/* <Route path="/uub-dashboard" element={<Dashboard />}>
         <Route path="use-case" element={<UseCase />} />
         <Route path="domain" element={<Domain />} />

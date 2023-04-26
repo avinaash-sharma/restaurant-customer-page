@@ -60,7 +60,7 @@ const Welcome = () => {
               About Us
             </Button>
             </Link>
-            <Link to={linkCreationMenu}></Link>
+            
             <Button variant="primary" onClick={() => navigate(linkCreationMenu)} size={buttonSize} w={[300, 200, 60]}>
               Menu
             </Button>

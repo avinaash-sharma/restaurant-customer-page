@@ -18,7 +18,7 @@ const index = () => {
     <HStack maxW="300px">
       
     <IconButton rounded={'full'} aria-label='add' size={'xs'} {...dec} icon={<Icon as={MdRemoveCircleOutline} w={5} h={5} />} />
-    <Input isDisabled={'true'} maxW='40px' size={'sm'} {...input} />
+      <Input isDisabled={'true'} maxW='40px' size={'sm'} {...input} />
     <IconButton rounded={'full'} aria-label='add' size={'xs'}  {...inc} icon={<Icon as={MdOutlineAddCircleOutline} w={5} h={5} />} />
      
     </HStack>

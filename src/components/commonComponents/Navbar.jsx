@@ -2,9 +2,7 @@ import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -17,9 +15,12 @@ import {
   Stack,
   Text,
   Container,
+  Icon
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import {FiSettings, FiShoppingCart} from "react-icons/fi"
+import { Link, useNavigate  } from "react-router-dom";
+import { useParams } from "react-router";
 
 const Links = ['Dashboard', 'Projects', 'Team'];
 
@@ -39,15 +40,19 @@ const NavLink = ({ children }) => (
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
+  const params = useParams();
+  const toCartPage = `/cart/${params.name}`
+
 
   return (
     <Container maxW='container.sm'>
-      <Box bg={'#2c3139'} px={4}>
+      <Box bg={'primary'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
-          bg={'#2c3139'}
+          bg={'primary'}
             size={'md'}
-            icon={isOpen ? <CloseIcon color="brand.900" /> : <HamburgerIcon color={'brand.900'} />}
+            icon={isOpen ? <CloseIcon color={'brand.900'} /> : <HamburgerIcon color={'brand.900'} />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
@@ -72,8 +77,8 @@ export default function Simple() {
                 variant={'link'}
                 cursor={'pointer'}
                 minW={0}>
-                <FiSettings mx={'3'} color="#B0883C" size={'20'} />
                 
+                <Icon as={FiSettings} color={'brand.900'} size={'20'} />
               </MenuButton>
               <MenuList>
                 <MenuItem>Link 1</MenuItem>
@@ -82,7 +87,10 @@ export default function Simple() {
                 <MenuItem>Link 3</MenuItem>
               </MenuList>
             </Menu>
-            <FiShoppingCart color="#B0883C" size={'20'} />
+            <Link to={toCartPage}>
+              <Icon as={FiShoppingCart} color={'brand.900'} size={'20'} />
+            </Link>
+            
             </HStack>
           </Flex>
           

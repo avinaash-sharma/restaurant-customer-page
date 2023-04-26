@@ -46,7 +46,7 @@ import {
           800: "#5fae38",
           900: "#B0883C"
         },
-        primary: "#2C3333",
+        primary: "#2c3139",
         secondary: "#2E4F4F",
         primaryText: "#CBE4DE",
         secondaryText: "#0E8388"
