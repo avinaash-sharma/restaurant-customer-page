@@ -1,9 +1,5 @@
 .menuContainer {
     display: flex;
     flex: 1;
-    flex-direction: row;
-    justify-content: space-around;
-    overflow-y: auto;
-    overflow-x: hidden;
     flex-wrap: wrap;
   }

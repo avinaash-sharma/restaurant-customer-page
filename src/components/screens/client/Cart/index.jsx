@@ -3,7 +3,7 @@ import Cart from './Cart'
 
 const index = () => {
   return (
-    <div><Cart /></div>
+    <Cart />
   )
 }
 
