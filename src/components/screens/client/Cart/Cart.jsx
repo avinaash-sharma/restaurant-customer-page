@@ -23,6 +23,10 @@ const Cart = () => {
       <Container>
         <CartItem />
         <CartItem />
+        <CartItem />
+        <CartItem />
+        <CartItem />
+        <CartItem />
       </Container>
       <Box width={"full"} position={"fixed"} bottom={"0"}>
         <Button width={"full"} bg={"brand.900"}>
