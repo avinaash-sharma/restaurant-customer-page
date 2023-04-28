@@ -30,7 +30,8 @@ const Cart = () => {
         <CartItem />
         <CartItem />
       </Container>
-      <Box width={"full"} position={"fixed"} bottom={"0"}>
+      <Box width={"full"} bg={'primary'} padding={'1'} position={"sticky"} bottom={"0"}>
+      
         <Button width={"full"} bg={"brand.900"}>
           Place Order
         </Button>
