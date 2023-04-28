@@ -4,6 +4,8 @@ import {
   ButtonGroup,
   Flex,
   IconButton,
+  Tag,
+  TagLabel,
   Text,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
@@ -72,7 +74,7 @@ const Menu = () => {
         {categories?.map((category, index) => {
           return (
             <Button
-                variant={"primary"}
+                backgroundColor={'brand.900'}
                 onClick={() => handleClickMenu(category)}
                 key={category + index + "_box"}
                 size={"sm"}
@@ -80,6 +82,18 @@ const Menu = () => {
               >
                 {category}
               </Button>
+            // <Tag
+            //   size={"sm"}
+            //   key={category + index + "_box"}
+            //   borderRadius="full"
+            //   variant={"brand.900"}
+            //   colorScheme={"brand.900"}
+            // >
+            //   <TagLabel>{category}</TagLabel>
+            //   {selectedCategories.includes(category) && (
+            //     <MdRemoveCircleOutline />
+            //   )}
+            // </Tag>
           );
         })}
       </div>
