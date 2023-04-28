@@ -1,11 +1,10 @@
 .menuContainer {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  height: 35px;
+  width: 100%;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 

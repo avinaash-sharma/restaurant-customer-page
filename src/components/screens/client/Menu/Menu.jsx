@@ -45,7 +45,6 @@ const Menu = () => {
   return (
     <Box>
       <div className="menuContainer">
-       
           {categories?.map((category, index) => {
             return (
               <Button
