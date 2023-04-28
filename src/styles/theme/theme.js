@@ -27,7 +27,7 @@ import {
   const brandRing = {
     _focus: {
       ring: 2,
-      ringColor: "brand.500"
+      ringColor: "brand.900"
     }
   };
   
@@ -35,15 +35,7 @@ import {
     {
       colors: {
         brand: {
-          50: "#edf6e9",
-          100: "#dbedd3",
-          200: "#c9e4bd",
-          300: "#b8dba7",
-          400: "#a6d291",
-          500: "#94c97b",
-          600: "#83c065",
-          700: "#71b74e",
-          800: "#5fae38",
+          
           900: "#B0883C"
         },
         primary: "#2c3139",
@@ -66,7 +58,7 @@ import {
               },
   
               _active: {
-                backgroundColor: mode("brand.900")(props)
+                backgroundColor: mode("primaryText")(props)
               }
             })
           }

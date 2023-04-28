@@ -7,7 +7,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { MdUnarchive } from "react-icons/md";
+import { MdRemoveCircleOutline } from "react-icons/md";
 import MockData from "./mock_data.json";
 import FoodCard from "../../../commonComponents/FoodCards";
 
@@ -52,13 +52,15 @@ const Menu = () => {
 
   const handleClickMenu = (categoryName) => {
     var operationVariable = [...selectedCategories];
-    if(!operationVariable.includes(categoryName)){
+    if (!operationVariable.includes(categoryName)) {
       operationVariable.push(categoryName);
-    }else{
-      operationVariable = operationVariable.filter(item => item !== categoryName);
+    } else {
+      operationVariable = operationVariable.filter(
+        (item) => item !== categoryName
+      );
     }
     setSelectedCategories(operationVariable);
-  }
+  };
 
   useEffect(() => {
     getData();
@@ -69,23 +71,28 @@ const Menu = () => {
       <div className="menuContainer">
         {categories?.map((category, index) => {
           return (
-            <ButtonGroup key={category + index + "_button_group"} onClick={() => handleClickMenu(category)} size="sm" isAttached variant="primary">
-              <Button
+            <Button
                 variant={"primary"}
+                onClick={() => handleClickMenu(category)}
                 key={category + index + "_box"}
                 size={"sm"}
+                leftIcon={selectedCategories.includes(category) && <MdRemoveCircleOutline />}
               >
                 {category}
               </Button>
-              {selectedCategories.includes(category) && <IconButton key={category + index + "_icon"} aria-label="Add to friends" icon={<MdUnarchive />} />}
-            </ButtonGroup>
           );
         })}
       </div>
       <div className="foodCardContainer">
-        {MockData.map((item, count) => (
-          <FoodCard key={count + item.name} data={item} />
-        ))}
+        {MockData.map((item, index) => {
+          if (selectedCategories.length == 0) {
+            return <FoodCard key={index + item} data={item} />;
+          } else {
+            if (selectedCategories.includes(item.category)) {
+              return <FoodCard key={index + item} data={item} />;
+            }
+          }
+        })}
       </div>
     </Box>
   );

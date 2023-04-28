@@ -43,7 +43,7 @@ const index = ({ data }) => {
 
           <Text py="2">{item.description}</Text>
           <HStack spacing={2}>
-            {item.characteristics.map((character) => {
+            {item?.characteristics.map((character) => {
               return (
                 <Tag
                   size={"md"}
