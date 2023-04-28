@@ -6,6 +6,12 @@ import {
   Button,
   Card,
   Center,
+  Container,
+  Flex,
+  Icon,
+  Image,
+  Portal,
+  Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
@@ -13,23 +19,17 @@ const Cart = () => {
   const navigate = useNavigate();
   const buttonSize = useBreakpointValue(["sm", "md"]);
   return (
-    <div>
-      <Box paddingX={5}>
+    <Box>
+      <Container>
         <CartItem />
+        <CartItem />
+      </Container>
+      <Box width={"full"} position={"fixed"} bottom={"0"}>
+        <Button width={"full"} bg={"brand.900"}>
+          Place Order
+        </Button>
       </Box>
-      <Box bottom={0} position={'fixed'} marginTop={4}>
-        <Center>
-          <Button
-            variant="primary"
-            onClick={() => navigate()}
-            size={buttonSize}
-            w={[300, 200, 60]}
-          >
-            Place Order
-          </Button>
-        </Center>
-      </Box>
-    </div>
+    </Box>
   );
 };
 

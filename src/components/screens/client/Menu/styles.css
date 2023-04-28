@@ -2,15 +2,13 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: space-around;
-  overflow-y: auto;
-  overflow-x: hidden;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 35px;
 }
 
-div.menuContainer {
-  overflow: auto;
-}
+
 
 div.menuContainer button {
   display: inline-block;

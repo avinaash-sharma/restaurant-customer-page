@@ -9,11 +9,17 @@ const Menu = () => {
 
   // const menu = [...MockData.menu];
   const getData = () => {
-    const characterOfFood = MockData.map((category) => {
-      return category.category;
+    const characterOfFood = [];
+    MockData.forEach((category) => {
+      
+        characterOfFood.push(category.category);
+      
     });
 
-    setCategories(characterOfFood);
+    const uniqueCategory = characterOfFood.filter((category, index) => characterOfFood.indexOf(category) == index);
+
+    setCategories(uniqueCategory);
+    console.log("🚀 ~ file: Menu.jsx:20 ~ getData ~ characterOfFood:", uniqueCategory)
     // console.log("🚀 ~ file: Menu.jsx:14 ~ getData ~ MockData[0]:", MockData[0]);
     // console.log(
     //   "🚀 ~ file: Menu.jsx:14 ~ getData ~ characterOfFood:",
@@ -39,17 +45,18 @@ const Menu = () => {
   return (
     <Box>
       <div className="menuContainer">
-        {categories?.map((category, index) => {
-          return (
-            <Button
-              variant={"primary"}
-              key={category + index + "_box"}
-              size={"sm"}
-            >
-              <Text key={category + index}>{category}</Text>
-            </Button>
-          );
-        })}
+       
+          {categories?.map((category, index) => {
+            return (
+              <Button
+                variant={"primary"}
+                key={category + index + "_box"}
+                size={"sm"}
+              >
+                <Text key={category + index}>{category}</Text>
+              </Button>
+            );
+          })}
       </div>
       <div className="foodCardContainer">
         {MockData.map((item, count) => (
