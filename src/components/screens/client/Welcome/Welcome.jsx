@@ -19,7 +19,7 @@ const Welcome = () => {
   const params = useParams();
   const navigate = useNavigate();
   const buttonSize = useBreakpointValue(["sm", "md"]);
-  console.log("🚀 ~ file: Welcome.jsx:10 ~ Welcome ~ params:", params);
+  
   const linkCreationMenu = `/menu/${params.name}`
 
   return (

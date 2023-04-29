@@ -1,9 +1,10 @@
 import React from 'react'
 import CartItem from './CartItem'
 
-const index = () => {
+const index = (data, removeItem) => {
+  
   return (
-  <CartItem />
+  <CartItem data={data.data} removeItem={removeItem} />
   )
 }
 

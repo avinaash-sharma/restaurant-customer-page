@@ -29,10 +29,7 @@ const Menu = () => {
     );
 
     setCategories(uniqueCategory);
-    console.log(
-      "🚀 ~ file: Menu.jsx:20 ~ getData ~ characterOfFood:",
-      uniqueCategory
-    );
+    
     // console.log("🚀 ~ file: Menu.jsx:14 ~ getData ~ MockData[0]:", MockData[0]);
     // console.log(
     //   "🚀 ~ file: Menu.jsx:14 ~ getData ~ characterOfFood:",

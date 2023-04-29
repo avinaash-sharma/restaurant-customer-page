@@ -26,25 +26,35 @@ import { RiDeleteBin6Line, RiAddCircleLine } from "react-icons/ri";
 import { HiOutlineMinusCircle } from "react-icons/hi";
 import Counter from "../Counter";
 
-const CartItem = () => {
+const CartItem = (data, removeItem) => {
+  
+  // const [id,
+  //   name,
+  //   price,
+  //   description,
+  //   rating,
+  //   image,
+  //   characteristics,
+  //   availability,
+  //   category] = data;
   return (
-    <Card margin={2} padding={4} w="full" bg={"brand.900"}>
+    <Card key={data.data.id + data.data.name} margin={2} padding={4} w="full" bg={"brand.900"}>
       <Flex justifyContent={"flex-start"}>
         <Box marginRight={3}>
           <Image
             borderRadius={"full"}
             objectFit={'cover'}
             boxSize={['50px', '100px', '150px']}
-            src="https://images.pexels.com/photos/2689419/pexels-photo-2689419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src={data.data.image}
             alt="spinach"
           />
         </Box>
         <Box width={'full'}>
           <Flex flexDirection={"column"} justifyContent={'flex-end'}>
             <Box>
-              <Text as="b">Some Kind of Food</Text>
+              <Text as="b">{data.data.name}</Text>
               <Text  pt="1" fontSize="xs">
-              ₹ 1000
+              ₹ {data.data.price}
               </Text>
             </Box>
             <Flex width={'full'} pt={3} justifyContent={"space-between"}>
@@ -56,7 +66,7 @@ const CartItem = () => {
                 </Flex>
               </Box>
               <Box>
-                <Icon as={RiDeleteBin6Line} color={"primary"} size={"20"} />
+                <Icon onClick = {() => {removeItem(data)}} as={RiDeleteBin6Line} color={"primary"} size={"20"} />
               </Box>
             </Flex>
           </Flex>
@@ -65,5 +75,6 @@ const CartItem = () => {
     </Card>
   );
 };
+   
 
 export default CartItem;

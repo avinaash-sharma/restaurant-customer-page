@@ -1,0 +1,168 @@
+[
+    {
+      "id": 1,
+      "name": "Veggie Spring Rolls",
+      "price": 180,
+      "description": "Crispy spring rolls filled with mixed vegetables and served with sweet chili sauce",
+      "rating": 4.2,
+      "image": "https://images.pexels.com/photos/3569706/pexels-photo-3569706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "characteristics": ["vegetarian", "gluten-free"],
+      "availability": "Available",
+      "category": "Appetizer"
+    },
+    {
+      "id": 2,
+      "name": "Margherita Pizza",
+      "price": 400,
+      "description": "Classic pizza with tomato sauce, mozzarella cheese, and fresh basil",
+      "rating": 4.5,
+      "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "characteristics": ["vegetarian"],
+      "availability": "Available",
+      "category": "Pizza"
+    },
+    {
+      "id": 3,
+      "name": "Chicken Caesar Salad",
+      "price": 280,
+      "description": "Romaine lettuce, grilled chicken, croutons, and parmesan cheese tossed in Caesar dressing",
+      "rating": 4.0,
+      "image": "https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "characteristics": ["gluten-free"],
+      "availability": "Available",
+      "category": "Salad"
+    },
+    {
+      "id": 4,
+      "name": "Fish and Chips",
+      "price": 320,
+      "description": "Crispy fried fish served with french fries and tartar sauce",
+      "rating": 4.3,
+      "image": "https://images.pexels.com/photos/2610908/pexels-photo-2610908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "characteristics": ["seafood", "dairy-free"],
+      "availability": "Available",
+      "category": "Main Course"
+    },
+    {
+      "id": 5,
+      "name": "Beef Burger",
+      "price": 350,
+      "description": "Grilled beef patty with lettuce, tomato, onion, and pickles, served with french fries",
+      "rating": 4.4,
+      "image": "https://images.pexels.com/photos/1633576/pexels-photo-1633576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "characteristics": ["non-vegetarian"],
+      "availability": "Available",
+      "category": "Burger"
+    },
+
+  {
+    "id": 7,
+    "name": "Sushi Combo",
+    "price": 550,
+    "description": "Assorted sushi rolls including California Roll, Dragon Roll, and Spicy Tuna Roll",
+    "rating": 4.8,
+    "image": "https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["seafood", "gluten-free"],
+    "availability": "Available",
+    "category": "Japanese"
+  },
+  {
+    "id": 8,
+    "name": "Vegetable Fried Rice",
+    "price": 250,
+    "description": "Stir-fried rice with mixed vegetables, tofu, and soy sauce",
+    "rating": 4.0,
+    "image": "https://images.pexels.com/photos/343871/pexels-photo-343871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["vegetarian", "vegan"],
+    "availability": "Available",
+    "category": "Rice Dish"
+  },
+  {
+    "id": 9,
+    "name": "Mushroom Risotto",
+    "price": 320,
+    "description": "Creamy risotto with assorted mushrooms, parmesan cheese, and truffle oil",
+    "rating": 4.6,
+    "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["vegetarian"],
+    "availability": "Available",
+    "category": "Italian"
+  },
+  {
+    "id": 10,
+    "name": "Chicken Tikka Masala",
+    "price": 350,
+    "description": "Tender chicken pieces cooked in a creamy tomato-based sauce with Indian spices",
+    "rating": 4.3,
+    "image": "https://images.pexels.com/photos/1049626/pexels-photo-1049626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["non-vegetarian"],
+    "availability": "Available",
+    "category": "Indian"
+  },
+  {
+    "id": 11,
+    "name": "Chocolate Lava Cake",
+    "price": 180,
+    "description": "Warm chocolate cake with a gooey molten center, served with vanilla ice cream",
+    "rating": 4.5,
+    "image": "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["vegetarian"],
+    "availability": "Available",
+    "category": "Dessert"
+  },
+  {
+    "id": 12,
+    "name": "Iced Caramel Macchiato",
+    "price": 350,
+    "description": "Espresso mixed with caramel syrup, milk, and ice, topped with whipped cream",
+    "rating": 4.7,
+    "image": "https://images.pexels.com/photos/14849850/pexels-photo-14849850.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "characteristics": ["beverage", "iced"],
+    "availability": "Available",
+    "category": "Drinks"
+  },
+  {
+    "id": 13,
+    "name": "Strawberry Lemonade",
+    "price": 200,
+    "description": "Refreshing lemonade with fresh strawberries, mint, and ice",
+    "rating": 4.5,
+    "image": "https://images.pexels.com/photos/8605802/pexels-photo-8605802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["beverage", "non-alcoholic", "fruit-flavored"],
+    "availability": "Available",
+    "category": "Drinks"
+  },
+  {
+    "id": 14,
+    "name": "Classic Margarita",
+    "price": 450,
+    "description": "Traditional margarita cocktail made with tequila, triple sec, lime juice, and salt rim",
+    "rating": 4.8,
+    "image": "https://images.pexels.com/photos/2480828/pexels-photo-2480828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["beverage", "alcoholic", "cocktail"],
+    "availability": "Available",
+    "category": "Drinks"
+  },
+  {
+    "id": 15,
+    "name": "Hot Chocolate",
+    "price": 250,
+    "description": "Rich and creamy hot chocolate made with cocoa powder, milk, and whipped cream",
+    "rating": 4.4,
+    "image": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["beverage", "hot", "chocolate"],
+    "availability": "Available",
+    "category": "Drinks"
+  },
+  {
+    "id": 16,
+    "name": "Fresh Orange Juice",
+    "price": 180,
+    "description": "Freshly squeezed orange juice made from ripe oranges",
+    "rating": 4.6,
+    "image": "https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "characteristics": ["beverage", "non-alcoholic", "fruit juice"],
+    "availability": "Available",
+    "category": "Drinks"
+  }
+]
