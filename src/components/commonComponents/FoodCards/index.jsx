@@ -41,7 +41,7 @@ const index = ({ data }) => {
         alt={item.name}
       />
 
-      <Stack paddingLeft={3}>
+      <Stack paddingLeft={3} className="cardDetails">
           <Heading size="sm">{item.name}</Heading>
 
           {/*<Text py="2">{item.description}</Text>*/}

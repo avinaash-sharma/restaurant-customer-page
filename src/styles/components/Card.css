@@ -5,3 +5,8 @@
     flex-direction: row;
     align-items: baseline;
 }
+
+.cardDetails{
+    display: flex;
+    flex: 1;
+}
