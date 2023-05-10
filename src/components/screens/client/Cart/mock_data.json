@@ -43,17 +43,6 @@
       "availability": "Available",
       "category": "Main Course"
     },
-    {
-      "id": 5,
-      "name": "Beef Burger",
-      "price": 350,
-      "description": "Grilled beef patty with lettuce, tomato, onion, and pickles, served with french fries",
-      "rating": 4.4,
-      "image": "https://images.pexels.com/photos/1633576/pexels-photo-1633576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "characteristics": ["non-vegetarian"],
-      "availability": "Available",
-      "category": "Burger"
-    },
 
   {
     "id": 7,
