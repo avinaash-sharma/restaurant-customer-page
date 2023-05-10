@@ -11,6 +11,7 @@ import {
   TagLabel,
   TagLeftIcon,
   HStack,
+  Flex,
 } from "@chakra-ui/react";
 
 import Counter from "../Counter";
@@ -29,24 +30,26 @@ const index = ({ data }) => {
       variant="primary"
       backgroundColor={"brand.900"}
       my={{ base: "10", md: "15" }}
+      p={{ base: "1", md: "10" }}
     >
+    <Flex>
       <Image
         objectFit="cover"
-        maxW={{ base: "100%", sm: "200px" }}
+        maxW={{ base: "100px", sm: "50px" }}
+        h={{base: "100px", sm: "50px" }}
         src={item.image}
         alt={item.name}
       />
 
-      <Stack>
-        <CardBody>
-          <Heading size="md">{item.name}</Heading>
+      <Stack paddingLeft={3}>
+          <Heading size="sm">{item.name}</Heading>
 
-          <Text py="2">{item.description}</Text>
+          {/*<Text py="2">{item.description}</Text>*/}
           <HStack spacing={2}>
             {item?.characteristics.map((character) => {
               return (
                 <Tag
-                  size={"md"}
+                  size={"sm"}
                   key={item.id + character}
                   variant="subtle"
                   colorScheme="cyan"
@@ -56,22 +59,22 @@ const index = ({ data }) => {
               );
             })}
           </HStack>
-        </CardBody>
 
-        <CardFooter>
+        
           <div className="cardFooter">
             
             <Counter />
 
-            <Text as='b' pt={"5"} color="white" fontSize="2xl">
+            <Text as='b' pt={"2"} color="white" fontSize="lg">
               ₹ {item.price}
             </Text>
           </div>
           {/*<Button variant="primary" colorScheme="blue">
             Add to Tray
         </Button>*/}
-        </CardFooter>
+        
       </Stack>
+      </Flex>
     </Card>
   );
 };
